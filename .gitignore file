@@ -1,0 +1,42 @@
+# Create .gitignore to exclude unnecessary files
+@"
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Database
+*.db
+*.sqlite3
+
+# Logs
+*.log
+scrapnalyze.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables
+.env
+.secrets
+
+# CSV files (optional - remove if you want to track them)
+*.csv
+"@ | Out-File -FilePath .gitignore -Encoding UTF8
+
+# Verify the file was created
+ls
