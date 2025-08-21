@@ -19,7 +19,7 @@ logging.basicConfig(
 db = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="ojYy667$#",
+    password="",
     database="jobs_db"
 )
 cursor = db.cursor(dictionary=True)
